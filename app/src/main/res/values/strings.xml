@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Stark Cinema</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Stark Cinema</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="gridtwoColums">GridView 2 Col</string>
+    <string name="gridthreeColums">GridView 3 Col</string>
+    <string name="listtogrid">Gridview</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="Original_title">Original Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="overview">OverView</string>
+    <string name="play_button">Play button image</string>
+    <string name="trailerLabel"><![CDATA[<-------------Trailers------------->]]></string>
+    <string name="reviewsLabel"><![CDATA[<----------Reviews---------->]]></string>
+    <string name="favourites">favourites</string>
+    <string name="nothinginfav">Nothing In Favourites</string>
+
+
+</resources>
