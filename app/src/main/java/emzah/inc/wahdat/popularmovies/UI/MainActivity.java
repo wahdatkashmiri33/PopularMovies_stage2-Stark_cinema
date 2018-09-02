@@ -272,7 +272,7 @@ public class MainActivity extends AppCompatActivity
         }  else if (id== emzah.inc.wahdat.popularmovies.R.id.favourites){
 
 
-       
+
             loadfavouritemovies();
 
 
@@ -305,9 +305,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void SetupViewModel() {
-        // Log.d("No onchange test","actively receiving data");
-        //we are commenting below line because i am calling getallmoview method in viewmodel class
-        // final LiveData<List<FavouritesModal>> listofmovies=mdb.moviesDao().getAllMovies();
+
         FavViewmodel viewmodel= ViewModelProviders.of(this).get(FavViewmodel.class);
         //now we can retreive our live data objectusing getmovies method from viewmodel
         viewmodel.getFavourites().observe(this, new Observer<List<FavouritesModal>>() {
