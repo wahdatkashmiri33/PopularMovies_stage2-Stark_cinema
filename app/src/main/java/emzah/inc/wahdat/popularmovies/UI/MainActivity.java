@@ -11,6 +11,7 @@ import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ShareCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -271,11 +272,21 @@ public class MainActivity extends AppCompatActivity
         }  else if (id== emzah.inc.wahdat.popularmovies.R.id.favourites){
 
 
-        //    Intent intent=new Intent(MainActivity.this,Favourites.class);
-          //  startActivity(intent);
+       
             loadfavouritemovies();
 
 
+        }
+        else if (id==R.id.share){
+            String MIMETYPE="text/plain";
+            String title="Share Stark Cinema";
+            String link="https://play.google.com/store/apps/details?id=emzah.inc.wahdat.popularmovies";
+            ShareCompat.IntentBuilder
+                    .from(this)
+                    .setType(MIMETYPE)
+                    .setChooserTitle(title)
+                    .setText(link)
+                    .startChooser();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(emzah.inc.wahdat.popularmovies.R.id.drawer_layout);

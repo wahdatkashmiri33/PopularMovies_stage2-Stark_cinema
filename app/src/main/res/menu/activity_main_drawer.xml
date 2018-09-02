@@ -17,5 +17,14 @@
     </group>
 
 
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
 
 </menu>
